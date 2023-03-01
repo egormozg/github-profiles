@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(21, 21, 71);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.user-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.user-form input {
+    width: 100%;
+    display: block;
+    background-color: rgb(76, 40, 133);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+.card {
+    max-width: 600px;
+    background-color: rgb(76, 40, 133);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid rgb(50, 33, 77);
+    height: 120px;
+    width: 120px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+}
+
+.user-info p {
+    margin: 0.5rem 0;
+    text-align: justify;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin: 0 0.7rem 0 0.4rem;
+}
+
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(33, 42, 114);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin: 0.3rem 0.5rem 0.5rem 0;
+    display: inline-block;
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-form {
+        max-width: 350px;
+    }
+
+    .user-info ul li {
+        font-size: 0.8rem;
+    }
+
+    .user-info ul li strong {
+        font-size: 0.8rem;
+    }
+
+    .user-info p {
+        text-align: start;
+    }
+}
